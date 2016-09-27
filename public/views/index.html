@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
     <meta charset="utf-8">
+    <script src="../vendors/angular.min.js" charset="utf-8"></script>
     <script src="../scripts/client.js" charset="utf-8"></script>
     <title>title</title>
-  </head>
-  <body>
+  </head >
+  <body  ng-app = "myApp">
+    <div ng-controller = "authController">
+
     <h1>hello world</h1>
+    <div ng-show = "showStuff">
+      showstuff is true
+    </div>
+    <div ng-hide = "showStuff">
+      showstuff is friggin' false
+
+    </div>
+    <button type="button" name="button" ng-click = "showNHide()">toggle</button>
+  </div>
+
   </body>
 </html>
